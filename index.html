@@ -29,7 +29,7 @@
     </div>
     
     <div class="trailer">
-        <video src="img/trailer.mp4" controls ></video>
+        <video src="img/trailer.mp4" controls autoplay ></video>
         <img src="img/close.png" onclick="toogle()" class="close" alt="">
     </div>
     <script>
@@ -37,10 +37,9 @@
             let toogle = document.querySelector(".trailer")
             let video = document.querySelector("video")
             toogle.classList.toggle("active")
-
-            video.currentTime = 0
-            video.pause()
         }
+        video.currentTime = 0
+         video.pause()
     </script>
 </body>
 </html>
