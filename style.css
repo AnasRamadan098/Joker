@@ -168,19 +168,17 @@ header .toogle img {
         font-size: 1em;
     }
     .slide {
-        position: relative;
-        bottom: initial;
-        left: 0;
+        position: absolute;
+        bottom: -10px;
+        left: 30px;
         width: 250px;
         margin: 20px 0;
         height: 150px;
     }
     .soc {
         position: absolute;
-        top: initial;
-        right: initial;
-        flex-direction: row;
-        margin-top: 40px;
+        right: 10px;
+        flex-direction: column;
     }
     
     .soc li {
