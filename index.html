@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Joker</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="img/logo (1).png" alt="Logo"></a>
+        <div class="toogle">
+            <img src="img/toggle.png" alt="">
+        </div>
+    </header>
+        <div class="banner">
+        <div class="content">
+            <h2>Put On A <span>Happy Face</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sequi fugiat id ut facere reiciendis temporibus vero sed accusamus iste cum nulla corporis numquam, recusandae sapiente! Corrupti quidem voluptatem recusandae?</p>
+            <a href="#" class="play" onclick="toogle()"><img src="img/play.png" alt="">Watch Trailer</a>
+        </div>
+        <ul class="soc" >
+            <li><a href="https://www.facebook.com/"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="https://twitter.com/"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt=""></a></li>
+        </ul>
+        <div class="slide"></div>
+    </div>
+    
+    <div class="trailer">
+        <video src="img/trailer.mp4" controls ></video>
+        <img src="img/close.png" onclick="toogle()" class="close" alt="">
+    </div>
+    <script>
+        function toogle() {
+            let toogle = document.querySelector(".trailer")
+            let video = document.querySelector("video")
+            toogle.classList.toggle("active")
+
+            video.currentTime = 0
+            video.pause()
+        }
+    </script>
+</body>
+</html>
